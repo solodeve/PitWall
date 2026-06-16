@@ -9,5 +9,4 @@ public class PitWallApplication {
     public static void main(String[] args) {
         SpringApplication.run(PitWallApplication.class, args);
     }
-        
 }
