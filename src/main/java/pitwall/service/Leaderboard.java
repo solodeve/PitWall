@@ -12,10 +12,21 @@ public class Leaderboard {
 
     OpenF1Client openF1Client;
 
-    Leaderboard(OpenF1Client openF1Client, String sessionId) {
+    public Leaderboard(OpenF1Client openF1Client, String sessionId) {
         this.openF1Client = openF1Client;
 
         this.drivers = openF1Client.loadDrivers(sessionId);
         this.teams = openF1Client.loadTeams(sessionId);
+
+        showDrivers();
+    }
+
+    public void showDrivers() {
+        for (Driver d: drivers) {
+            Team team = d.team();
+
+            String message = "Team: " + team.name() + " - " + " " + d.name() + ": " + String.valueOf(d.championshipPoint());
+            System.out.println(message);
+        }
     }
 }

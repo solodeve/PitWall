@@ -2,7 +2,7 @@ package pitwall.model;
 
 public record Driver(
     String name,
-    String lastName,
+    int number,
     float championshipPoint,
     Team team
 ) {}

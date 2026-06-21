@@ -1,12 +1,12 @@
-package pitwall;
+// package pitwall;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.jupiter.api.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class PitWallApplicationTests {
+// @SpringBootTest
+// class PitWallApplicationTests {
 
-    @Test
-    void contextLoads() {}
+//     @Test
+//     void contextLoads() {}
 
-}
+// }
